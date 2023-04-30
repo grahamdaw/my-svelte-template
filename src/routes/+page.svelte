@@ -18,7 +18,7 @@
 		Svelte Template
 	</h2>
 
-	{#if !$userID}
+	{#if $userID}
 		<ShowUserID />
 	{/if}
     
