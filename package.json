@@ -42,5 +42,9 @@
   },
   "type": "module",
   "description": "A template for starting Svelte projects with the toolchain I want to use.",
-  "main": "postcss.config.js"
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.2"
+  }
 }
