@@ -13,7 +13,7 @@ const isTheme = (value: string | undefined): value is Theme => value === "light"
 const storedTheme = getFromLocalStorage('theme');
 
 // Create the store and set the initial value
-export const theme = writable<string>(isTheme(storedTheme) ?  storedTheme : getPreferredColorScheme());
+export const theme = writable<Theme>(isTheme(storedTheme) ?  storedTheme : getPreferredColorScheme());
 
-// Keep local state synchronized with the store
+// Keep local storage synchronized with the store
 theme.subscribe((value) => putToLocalStorage('theme', value));

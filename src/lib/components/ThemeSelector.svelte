@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { theme } from "$lib/store";
+	import setDocumentColorModeClass from "$lib/util/setDocumentColorModeClass";
+
+    $: setDocumentColorModeClass($theme);
 
 </script>
 <div>

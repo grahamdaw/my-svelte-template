@@ -1,9 +1,5 @@
 <script lang="ts">
-
-	import '../app.css';
-
 	import ThemeSelector from '$lib/components/ThemeSelector.svelte';
-
 </script>
 
 <svelte:head>	
@@ -12,7 +8,7 @@
 </svelte:head>
 
 <section>
-	<h2>
+	<h2 class="text-xl">
 		Svelte Template
 	</h2>
 
@@ -22,12 +18,3 @@
 
 </section>
 
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-</style>
