@@ -2,9 +2,7 @@
 
 	import '../app.css';
 
-	import { userID, } from '$lib/store';
-
-	import ShowUserID from '$lib/components/ShowUserID.svelte';
+	import ThemeSelector from '$lib/components/ThemeSelector.svelte';
 
 </script>
 
@@ -18,10 +16,9 @@
 		Svelte Template
 	</h2>
 
-	{#if $userID}
-		<ShowUserID />
-	{/if}
-    
+	<p>Go & write some code &#128515;</p>
+
+	<ThemeSelector/>
 
 </section>
 
