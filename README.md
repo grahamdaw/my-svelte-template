@@ -1,6 +1,11 @@
 # my-sevelte-template
 
-A template for starting Svelte projects with the toolchain I want to use.
+A template for quickly starting Svelte hobby projects (in Typescript):
+
+The main frameworks used are:
+- [Svelte](https://svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Skeleton UI Toolkit](https://www.skeleton.dev/)
 
 ## Developing
 
@@ -10,7 +15,7 @@ The required node and npm versions are defined in the `package.json`.
 
 The supported environment variables can be defined in a `.env` file. You can copy and configure the template [`.env.example`](.env.example) to `.env` to get started.
 
-The easiest way to set uop the project is to install [Node Version Manager](https://github.com/nvm-sh/nvm) and [direnv](https://github.com/direnv/direnv) to load and unload environment depending on the current directory.
+The easiest way to set up the project is to install [Node Version Manager](https://github.com/nvm-sh/nvm) and [direnv](https://github.com/direnv/direnv) to load and unload environment depending on the current directory.
 
 This project contains a [`.envrc`](.envrc) file to automatically set the correct node and environment. 
 
@@ -35,3 +40,9 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
+
+## Theme
+
+Skeleton provides a [theme generator](https://www.skeleton.dev/docs/generator).
+
+## Deploying

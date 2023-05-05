@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ThemeSelector from '$lib/components/ThemeSelector.svelte';
+	import "@skeletonlabs/skeleton/themes/theme-skeleton.css";
 </script>
 
 <svelte:head>	
@@ -7,14 +7,11 @@
 	<meta name="description" content="A Svelte app." />
 </svelte:head>
 
-<section>
-	<h2 class="text-xl">
-		Svelte Template
-	</h2>
-
-	<p>Go & write some code &#128515;</p>
-
-	<ThemeSelector/>
-
+<section class="h-full flex flex-col place-content-center place-items-center">
+		<h1 class="my-8">
+			My Svelte Template
+		</h1>
+		<p class="my-2">A basic Svelte template (including Tailwind CSS and Skeleton UI Toolkit)</p>
+		<p class="my-2">Now go & write some code &#128515;</p>
 </section>
 
