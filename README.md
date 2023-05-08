@@ -43,6 +43,6 @@ You can preview the production build with `npm run preview`.
 
 ## Theme
 
-Skeleton provides a [theme generator](https://www.skeleton.dev/docs/generator), which cab´n be used to add a theme to [src/theme.postcss](/src/theme.postcss).
+Skeleton provides a [theme generator](https://www.skeleton.dev/docs/generator), which can be used to create a theme and add it to [src/theme.postcss](/src/theme.postcss).
 
 ## Deploying
