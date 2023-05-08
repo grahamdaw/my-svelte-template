@@ -13,6 +13,7 @@ export default {
     extend: {},
   },
   plugins: [
+    require('@tailwindcss/forms'), // Needs to be above the 'skeleton.cjs' plugin
     ...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')() // Skeleton plugin
   ],
 }
