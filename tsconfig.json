@@ -1,6 +1,7 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
+		"baseUrl": ".",
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
@@ -9,13 +10,45 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"ignoreDeprecations": "5.0" // Currently required for some Svelte-Kit options
+		"ignoreDeprecations": "5.0", // Currently required for some Svelte-Kit options
+		"types": [
+			"unplugin-icons/types/svelte", // This is needed for unplugin to work correctly
+		],
+		// Using instead of esnext to so that Vercel Serverless Functions correctly compile modules.
+		"module": "ES2022", 
+		"target": "ES2022",
+		// Extended from SvelteKit
+		"paths": {
+			"$/*": [
+				"src/*"
+			],
+			"$lib": [
+				"src/lib"
+			],
+			"$lib/*": [
+				"src/lib/*"
+			]
+		},
 	},
+	// These are extended from the referenced .svelte-kit/tsconfig.json as TypeScript does not merge them together
+	"include": [
+		".svelte-kit/ambient.d.ts",
+		".svelte-kit/types/**/$types.d.ts",
+		"./vite.config.ts",
+		"./src/**/*.{js,mjs}",
+		"./src/**/*.{ts,mts}",
+		"./src/**/*.svelte",
+		"./api/**/*.{ts,mts}",
+		"./tests/**/*.js",
+		"./tests/**/*.ts",
+		"./tests/**/*.svelte", 
+	],
 	"exclude": [
-        "./*.config.js"
-    ]
-	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
-	//
-	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
-	// from the referenced tsconfig.json - TypeScript does not merge them in
+		"./node_modules/**",
+		"./.svelte-kit/[!ambient.d.ts]**",
+		"./src/service-worker.js",
+		"./src/service-worker.ts",
+		"./src/service-worker.d.ts",
+		"./*.config.js",
+	]
 }

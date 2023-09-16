@@ -1,6 +1,6 @@
 {
   "name": "my-svelte-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "node": ">=18",
     "npm": ">=9"
@@ -25,6 +25,7 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
+    "@iconify-json/fa6-solid": "^1.1.13",
     "@skeletonlabs/skeleton": "^1.2.5",
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/kit": "^1.5.0",
@@ -35,12 +36,14 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "postcss-import": "^15.1.0",
     "prettier": "^2.8.0",
     "prettier-plugin-svelte": "^2.8.1",
     "svelte": "^3.54.0",
     "svelte-check": "^3.0.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
+    "unplugin-icons": "^0.16.1",
     "vite": "^4.0.0"
   },
   "type": "module",

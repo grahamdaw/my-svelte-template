@@ -1,9 +1,9 @@
 <script lang="ts">
     // Skeleton theme via the Skeleton theme generator https://www.skeleton.dev/docs/generator
     // The order of these imports is important
-    import '../theme.postcss'; // Custom Skeleton theme
+    import '$/theme.postcss'; // Custom Skeleton theme
     import '@skeletonlabs/skeleton/styles/all.css'; // Skeletons required styles
-	import '../app.postcss'; // Application global stylesheet
+	import '$/app.postcss'; // Application global stylesheet
 
     import { AppShell } from '@skeletonlabs/skeleton';
 
