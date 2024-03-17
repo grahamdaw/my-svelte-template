@@ -1,7 +1,3 @@
-<script lang="ts">
-	import "@skeletonlabs/skeleton/themes/theme-skeleton.css";
-</script>
-
 <svelte:head>	
 	<title>Svelte Template</title>
 	<meta name="description" content="A Svelte app." />
