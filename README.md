@@ -3,6 +3,7 @@
 A template for quickly starting Svelte hobby projects (in Typescript):
 
 The main frameworks used are:
+
 - [Svelte](https://svelte.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Skeleton UI Toolkit](https://www.skeleton.dev/)
@@ -17,13 +18,14 @@ The supported environment variables can be defined in a `.env` file. You can cop
 
 The easiest way to set up the project is to install [Node Version Manager](https://github.com/nvm-sh/nvm) and [direnv](https://github.com/direnv/direnv) to load and unload environment depending on the current directory.
 
-This project contains a [`.envrc`](.envrc) file to automatically set the correct node and environment. 
+This project contains a [`.envrc`](.envrc) file to automatically set the correct node and environment.
 
 ```bash
 direnv allow
 ```
 
 You can then start developing with:
+
 ```bash
 npm install
 npm run dev
@@ -43,6 +45,6 @@ You can preview the production build with `npm run preview`.
 
 ## Theme
 
-Skeleton provides a [theme generator](https://www.skeleton.dev/docs/generator), which can be used to create a theme and add it to [src/theme.postcss](/src/theme.postcss).
+Skeleton provides a [theme generator](https://www.skeleton.dev/docs/generator), which can be used to create a theme and add it to [src/theme.ts](/src/theme.ts).
 
 ## Deploying
